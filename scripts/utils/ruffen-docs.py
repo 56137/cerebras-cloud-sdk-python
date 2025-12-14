@@ -114,6 +114,7 @@ Command injection lets attackers execute arbitrary OS commands, read or modify d
 
 Subprocess commands are constructed from variables and may invoke a shell, allowing untrusted input to influence executed command lines.
 </issue>
+main
 
 <locations>
 scripts/utils/ruffen-docs.py:108-119
@@ -176,5 +177,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+    
+
 
 
